@@ -1,0 +1,232 @@
+
+h1{
+    color: gray;
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+    text-decoration-line: overline;
+}
+h3 , .boton {
+    text-align: center;
+    position: relative;
+    right: 30px;
+
+}
+
+.logo{
+    width: 75px;
+    height: 75px;
+}
+
+nav{
+    background-image: url('./src/fondo.jpg');
+    background-repeat: repeat-x;
+    background-size: 33% 185%;
+    height: 100px;
+    color: white;
+    display: flex;
+    
+    
+}
+ul{
+    display: flex;
+    position: relative;
+    top: 60px;
+    right: 90px;
+   
+
+}
+ul li{
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+.secciones{
+    display: flex;
+    justify-content: center;
+    
+}
+.box{
+    width: 250px;
+    height: 350px;
+    margin: 0 20px;
+}
+.box img{
+    width: 225px;
+    height: 180px;
+}
+p   {
+    display: inline-block;
+    text-align: center;
+}
+.contenedor_form{
+    display: grid;
+    justify-content: center;
+}
+
+.form1{
+    padding-left: 40px;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+.form2{
+    padding-left: 40px;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+.boton{
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+    background-image: url('./src/fondo.jpg');
+    background-size: 80%;
+    text-align: center;
+    height: 180px;
+    color: white;
+}
+footer p{
+    position: relative;
+    top: 100px;
+}
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) and (max-width: 960px) {
+  
+  h3{
+    margin: -4px;
+     }
+
+     
+  nav {
+    background-size: 45%;
+    height: 125px;
+  }
+
+  .secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box {
+    width: calc(50% - 40px); 
+    height: 350px;
+    margin: 0 20px 20px; 
+    position: relative;
+    left: 70px;
+  }
+
+}
+
+
+  .boton {
+    text-align: center;
+    padding: 10px;
+  }
+
+
+
+
+/* Estilos para pantallas medianas */
+  @media (min-width: 641px) and (max-width:767px){
+    h3{
+     margin: -4px;
+      }
+ 
+      p{
+       padding-left: 30px;
+      }
+     .logo{
+       width: 25px;
+       height: 25px;
+   }
+   
+   nav{ 
+       background-size: 58%;
+       height: 150px;     
+   }
+   ul{
+     display: block;
+     position: relative;
+     top: 20px;
+     right: 65px;}
+ 
+     .secciones {
+       display: block;
+     }
+   
+     .box {
+       width: 100%;
+       height: auto;
+       margin: 20px 0;
+     }
+   
+     .box img {
+       width: 100%;
+       height: auto;
+     }
+   
+     .contenedor_form {
+       display: none;
+     }
+     footer{
+       background-size: 135%;
+       height: 140px;
+     }
+     footer p{
+      position: relative;
+      top: 55px;
+  }
+   }
+   
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 640px) {
+   h3{
+    margin: -4px;
+     }
+
+     p{
+      padding-left: 30px;
+     }
+    .logo{
+      width: 25px;
+      height: 25px;
+  }
+  
+  nav{ 
+      background-size: 75%;
+      height: 120px;     
+  }
+  ul{
+    display: block;
+    position: relative;
+    top: 20px;
+    right: 65px;}
+
+    .secciones {
+      display: block;
+    }
+  
+    .box {
+      width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+  
+    .box img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .contenedor_form {
+      display: none;
+    }
+    footer{
+      background-size: 200%;
+    }
+  }
+  
